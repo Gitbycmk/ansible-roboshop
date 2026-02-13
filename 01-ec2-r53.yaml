@@ -37,9 +37,9 @@
   #     msg: "{{ item.instances[0].private_ip_address }}"
   #   loop: "{{ ec2_output.results }}"
 
-  
+
   - name: create route53 record
-    ansible.aws.route53:
+    amazon.aws.route53:
       state: present
       zone: "{{ domain_name }}"
       record: "{{ item.item }}.{{ domain_name }}" # mongodb.dawsc86s.online
