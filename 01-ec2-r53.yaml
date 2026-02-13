@@ -43,7 +43,7 @@
       state: present
       zone: "{{ domain_name }}"
       record: "{{ item.item }}.{{ domain_name }}" # mongodb.dawsc86s.online
-      type: amazon
+      type: A
       ttl: 1
       value: "{{ item.instances[0].private_ip_address }}"
       overwrite: true
