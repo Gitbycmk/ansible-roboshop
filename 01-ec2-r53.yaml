@@ -8,9 +8,9 @@
     domain_name: "dawsc86s.online"
     insatnce: 
     - mongodb
-    - redis
-    - mysql
-    - rabbitmq
+    # - redis
+    # - mysql
+    # - rabbitmq
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
