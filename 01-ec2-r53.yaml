@@ -6,7 +6,7 @@
     sg_id: sg-0b256e920449f0838
     zone_id: "Z00990443C66P00HIY8Z0"
     domain_name: "dawsc86s.online"
-    insatnce: 
+    instances: 
     - mongodb
     # - redis
     # - mysql
