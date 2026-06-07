@@ -8,9 +8,14 @@
     domain_name: "dawsc86s.online"
     instances: 
     # - mongodb # we can pass command line using -e
-    # - redis
-    # - mysql
-    # - rabbitmq
+    - redis
+    - mysql
+    - rabbitmq
+    - redis
+    - rabbitmq
+    - catalopgue
+    - user
+    - cart 
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
